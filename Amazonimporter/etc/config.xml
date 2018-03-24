@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Ced_Amazonimporter>
+            <version>0.0.1</version>
+        </Ced_Amazonimporter>
+    </modules>
+    <frontend>
+        <routers>
+            <Ced_Amazonimporter_SomeFreeRouterName1>
+                <use>standard</use>
+                <args>
+                    <module>Ced_Amazonimporter</module>
+                    <frontName>ced-amazonimporter</frontName>
+                </args>
+            </Ced_Amazonimporter_SomeFreeRouterName1>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <ced_amazonimporter>
+                <class>Ced_Amazonimporter_Model</class>
+            </ced_amazonimporter>
+        </models>
+        <blocks>
+            <ced_amazonimporter>
+                <class>Ced_Amazonimporter_Block</class>
+            </ced_amazonimporter>
+        </blocks>
+        <resources>
+            <ced_amazonimporter_setup>
+                <setup>
+                    <module>Ced_Amazonimporter</module>
+                </setup>
+            </ced_amazonimporter_setup>
+        </resources>
+        <helpers>
+            <Ced_Amazonimporter>
+                <class>Ced_Amazonimporter_Helper</class>
+            </Ced_Amazonimporter>
+        </helpers>
+        <models>
+            <Ced_Amazonimporter>
+                <class>Ced_Amazonimporter_Model</class>
+            </Ced_Amazonimporter>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <ced_amazonimporter before="Mage_Adminhtml">Ced_Amazonimporter_Adminhtml</ced_amazonimporter>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <!-- Module identifier -->
+                <ced_amazonimporter>
+                    <file>ced/amazonimporter/product.xml</file>
+                </ced_amazonimporter>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

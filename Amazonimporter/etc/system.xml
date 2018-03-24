@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <cedcommerce translate="label" module="Ced_Amazonimporter">
+            <label>ced Extensions</label>
+            <sort_order>100</sort_order>
+        </cedcommerce>
+    </tabs>
+    <sections>
+        <amazonimporter translate="label" module="Ced_Amazonimporter">
+        <label>Amazon Importer</label>
+        <tab>cedcommerce</tab>
+        <frontend_type>text</frontend_type>
+        <sort_order>100000</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+        <groups>
+        <general translate="label" module="Ced_Amazonimporter">
+        <label>Amazona Settings</label>
+        <frontend_type>text</frontend_type>
+        <sort_order>1000</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>0</show_in_website>
+        <show_in_store>0</show_in_store>
+        <fields>
+        <active translate="label comment">
+            <label>Enabled</label>
+            <frontend_type>select</frontend_type>
+            <source_model>adminhtml/system_config_source_yesno</source_model>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+        </active>
+        <server_url>
+            <label>MWS Server url</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>20</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <depends><active>1</active></depends>
+            <validate>required-entry</validate>
+        </server_url>
+            <seller_id>
+                <label>MWS Seller Id</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>30</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </seller_id>
+            <marketplace_id>
+                <label>MWS Marketplace ID</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>40</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </marketplace_id>
+            <assess_keyid>
+                <label>MWS Access Key ID</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>50</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </assess_keyid>
+            <auth_id>
+                <label>MWS Auth ID</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>60</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </auth_id>
+            <secret_id>
+                <label>MWS Secret ID</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>70</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </secret_id>
+            <api_key>
+                <label>AWS Api Key</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>80</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </api_key>
+            <tag_key>
+                <label>AWS Tag Key</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>90</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </tag_key>
+            <secret_key>
+                <label>AWS Secret Key</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>100</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </secret_key>
+            <endpoint_url>
+                <label>AWS Endpoint URL</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>110</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>0</show_in_website>
+                <show_in_store>0</show_in_store>
+                <depends><active>1</active></depends>
+                <validate>required-entry</validate>
+            </endpoint_url>
+        </fields>
+        </general>
+        </groups>
+        </amazonimporter>
+    </sections>
+</config>
